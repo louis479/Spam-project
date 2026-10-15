@@ -1,5 +1,6 @@
 
 from fastapi import FastAPI
+from app.schemas import MessageRequest
 
 app = FastAPI(
     title="Spam Detection API",
@@ -22,3 +23,12 @@ def health_check():
         "status": "healthy",
         "application": "spam-detection-api",
     }
+
+
+@app.post("/messages")
+def receive_message(request: MessageRequest):
+    return {
+        "message": request.message,
+        "status": "Message received successfully",
+    }
+
