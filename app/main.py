@@ -1,6 +1,7 @@
 
 from fastapi import FastAPI
 from app.schemas import MessageRequest
+from app.services.predictor import predict_message
 
 app = FastAPI(
     title="Spam Detection API",
@@ -27,8 +28,9 @@ def health_check():
 
 @app.post("/messages")
 def receive_message(request: MessageRequest):
+    result = predict_message(request.message)
+
     return {
         "message": request.message,
-        "status": "Message received successfully",
+        **result,
     }
-

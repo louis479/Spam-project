@@ -1,0 +1,22 @@
+
+message,label
+"Hey, are we still meeting for lunch today?",normal
+"Please send me the notes from the meeting.",normal
+"Your appointment is confirmed for tomorrow.",normal
+"Can you call me when you arrive?",normal
+"Thank you for helping me with the assignment.",normal
+"I will be home in twenty minutes.",normal
+"Please remember to bring your notebook.",normal
+"Good morning, how are you doing?",normal
+"Your package will arrive this afternoon.",normal
+"Let us discuss the project after class.",normal
+"Congratulations! You have won a free prize!",spam
+"Claim your cash reward now by clicking this link!",spam
+"You have been selected to receive a free gift.",spam
+"URGENT! Claim your exclusive reward today!",spam
+"Win a free phone now. Text WIN to 12345.",spam
+"Congratulations! You are our lucky winner!",spam
+"Get a guaranteed cash bonus today!",spam
+"Limited offer! Claim your free voucher now!",spam
+"You have won a prize. Call now to claim it.",spam
+"Earn money fast with this special offer!",spam
